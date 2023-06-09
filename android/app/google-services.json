@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "324328563234",
+    "project_id": "jurident-ddb64",
+    "storage_bucket": "jurident-ddb64.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:324328563234:android:60444f2d146cce9d52207b",
+        "android_client_info": {
+          "package_name": "com.example.juridentt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "324328563234-74p3ecd1m1mv62380elqf9j9cuenk306.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYjphwLD57kQ85gVbeFpEQOYaiWiu08SA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "324328563234-74p3ecd1m1mv62380elqf9j9cuenk306.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
