@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
+import 'onboarding/onboarding1.dart';
+import 'onboarding/onboarding2.dart';
+import 'onboarding/onboarding3.dart';
+
 Route<dynamic> generateRoute(RouteSettings routeSettings) {
   switch (routeSettings.name) {
-    // case homescreen.routename:
-    //   return MaterialPageRoute(
-    //     settings: routeSettings,
-    //     builder: (_) => const AuthScreen(),
-    //   );
+    case '/':
+      return MaterialPageRoute(builder: (_) => OnboardingScreen());
+    case '/second':
+      return MaterialPageRoute(builder: (_) => OnboardingScreen2());
+    case '/third':
+      return MaterialPageRoute(builder: (_) => OnboardingScreen3());
 
     default:
       return MaterialPageRoute(
