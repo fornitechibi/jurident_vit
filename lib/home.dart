@@ -1,15 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:juridentt/authentication/login/login.dart';
+import 'package:juridentt/resources/auth.dart';
 
-class homescreen extends StatefulWidget {
-  const homescreen({super.key});
+class Homescreen extends StatefulWidget {
+  const Homescreen({super.key});
 
   @override
-  State<homescreen> createState() => _homescreenState();
+  State<Homescreen> createState() => _HomescreenState();
 }
 
-class _homescreenState extends State<homescreen> {
+class _HomescreenState extends State<Homescreen> {
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(
+      child: Scaffold(
+        body: Center(
+          child: ElevatedButton(
+            onPressed: () {
+              Auth().signOut();
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const LoginScreen(),
+                ),
+              );
+            },
+            child: const Text('Logout'),
+          ),
+        ),
+      ),
+    );
   }
 }

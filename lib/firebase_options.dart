@@ -67,7 +67,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '324328563234',
     projectId: 'jurident-ddb64',
     storageBucket: 'jurident-ddb64.appspot.com',
-    iosClientId: '324328563234-7d10opppkrnbvmh93gct7efp4qqi83vm.apps.googleusercontent.com',
+    iosClientId:
+        '324328563234-7d10opppkrnbvmh93gct7efp4qqi83vm.apps.googleusercontent.com',
     iosBundleId: 'com.example.juridentt',
   );
 
@@ -77,7 +78,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '324328563234',
     projectId: 'jurident-ddb64',
     storageBucket: 'jurident-ddb64.appspot.com',
-    iosClientId: '324328563234-4ubg1tcgilqjcv4ra03ohi39cq4q6bb7.apps.googleusercontent.com',
+    iosClientId:
+        '324328563234-4ubg1tcgilqjcv4ra03ohi39cq4q6bb7.apps.googleusercontent.com',
     iosBundleId: 'com.example.juridentt.RunnerTests',
   );
 }

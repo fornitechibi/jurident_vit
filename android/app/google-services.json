@@ -1,34 +1,158 @@
 {
   "project_info": {
-    "project_number": "324328563234",
-    "project_id": "jurident-ddb64",
-    "storage_bucket": "jurident-ddb64.appspot.com"
+    "project_number": "305549263527",
+    "firebase_url": "https://jurident-9a928-default-rtdb.firebaseio.com",
+    "project_id": "jurident-9a928",
+    "storage_bucket": "jurident-9a928.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:324328563234:android:60444f2d146cce9d52207b",
+        "mobilesdk_app_id": "1:305549263527:android:422e5c98fd722271d3d182",
         "android_client_info": {
-          "package_name": "com.example.juridentt"
+          "package_name": "com.example.calendar_backend"
         }
       },
       "oauth_client": [
         {
-          "client_id": "324328563234-74p3ecd1m1mv62380elqf9j9cuenk306.apps.googleusercontent.com",
+          "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDYjphwLD57kQ85gVbeFpEQOYaiWiu08SA"
+          "current_key": "AIzaSyA0Ek6hPABucmP7tLyZo_HQztPrX-YjfJE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "324328563234-74p3ecd1m1mv62380elqf9j9cuenk306.apps.googleusercontent.com",
+              "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
               "client_type": 3
+            },
+            {
+              "client_id": "305549263527-1ljmci48uau8vq2p2ptke3nl6m4195h8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.calendarBackend"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305549263527:android:c45a91364d529dccd3d182",
+        "android_client_info": {
+          "package_name": "com.example.calendar_event"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Ek6hPABucmP7tLyZo_HQztPrX-YjfJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "305549263527-1ljmci48uau8vq2p2ptke3nl6m4195h8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.calendarBackend"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305549263527:android:213b36d6b7539ec0d3d182",
+        "android_client_info": {
+          "package_name": "com.example.jurident"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Ek6hPABucmP7tLyZo_HQztPrX-YjfJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "305549263527-1ljmci48uau8vq2p2ptke3nl6m4195h8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.calendarBackend"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305549263527:android:60691bc0ddd13bfad3d182",
+        "android_client_info": {
+          "package_name": "com.example.juridentt"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305549263527-6r8alvbocdr0qn9kkf6idjiucpa9dv2i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.juridentt",
+            "certificate_hash": "7d36959e9656da62c605e5e5c8c780c6b779c75d"
+          }
+        },
+        {
+          "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0Ek6hPABucmP7tLyZo_HQztPrX-YjfJE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305549263527-dh2i3tabtm7n6ahauted7kkq5p7asl6p.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "305549263527-1ljmci48uau8vq2p2ptke3nl6m4195h8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.calendarBackend"
+              }
             }
           ]
         }
