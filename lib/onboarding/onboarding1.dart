@@ -52,8 +52,8 @@ class OnboardingScreen extends StatelessWidget {
                           ),
                         ),
                         onPressed: () {
-                          pageIndex.setPageIndex(1);
-                          Navigator.pushNamed(context, '/second');
+                          pageIndex.setPageIndex(2);
+                          Navigator.pushNamed(context, '/third');
                         },
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
