@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:juridentt/home.dart';
 import 'package:juridentt/onboarding/onboarding1.dart';
 import 'package:juridentt/theme/theme_provider.dart';
 import 'package:provider/provider.dart';

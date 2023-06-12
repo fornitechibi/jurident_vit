@@ -29,8 +29,7 @@ class OnboardingScreen extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                  
-                       IconButton(
+                  IconButton(
                         icon: Icon(
                           themeProvider.isDarkModeEnabled
                               ? Icons.light_mode
@@ -87,59 +86,71 @@ class OnboardingScreen extends StatelessWidget {
                 const SizedBox(
                   height: 42,
                 ),
-              Row(
-  mainAxisAlignment: MainAxisAlignment.center,
-  children: [
-    buildDot(
-      context,
-      pageIndex.index == 0,
-      themeProvider.dotbuttonColor,
-      Colors.white,
-      () {
-        pageIndex.setPageIndex(0); // Update with the correct page index
-        Navigator.pushNamed(context, '/'); // Update with the correct route for the first page
-      },
-    ),
-    buildDot(
-      context,
-      pageIndex.index == 1,
-      themeProvider.dotbuttonColor,
-      Colors.white,
-      () {
-        pageIndex.setPageIndex(1); // Update with the correct page index
-        Navigator.pushNamed(context, '/second'); // Update with the correct route for the second page
-      },
-    ),
-    buildDot(
-      context,
-      pageIndex.index == 2,
-      themeProvider.dotbuttonColor,
-      Colors.white,
-      () {
-        pageIndex.setPageIndex(2); // Update with the correct page index
-        Navigator.pushNamed(context, '/third'); // Update with the correct route for the third page
-      },
-    ),
-  ],
-),
+                LayoutBuilder(
+                  builder: (context, constraints) {
+                    final screenWidth = constraints.maxWidth;
 
+                    return Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        buildDot(
+                          context,
+                          pageIndex.index == 0,
+                          themeProvider.dotbuttonColor,
+                          Colors.white,
+                          () {
+                            pageIndex.setPageIndex(0);
+                            Navigator.pushNamed(context, '/');
+                          },
+                        ),
+                        buildDot(
+                          context,
+                          pageIndex.index == 1,
+                          themeProvider.dotbuttonColor,
+                          Colors.white,
+                          () {
+                            pageIndex.setPageIndex(1);
+                            Navigator.pushNamed(context, '/second');
+                          },
+                        ),
+                        buildDot(
+                          context,
+                          pageIndex.index == 2,
+                          themeProvider.dotbuttonColor,
+                          Colors.white,
+                          () {
+                            pageIndex.setPageIndex(2);
+                            Navigator.pushNamed(context, '/third');
+                          },
+                        ),
+                      ],
+                    );
+                  },
+                ),
                 const SizedBox(
                   height: 56,
                 ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: themeProvider.nextButtonColor,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(19),
+                Container(
+                  height: MediaQuery.of(context).size.height * 0.07, 
+                  child: FractionallySizedBox(
+                    widthFactor: 0.9,
+                   
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: themeProvider.nextButtonColor,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(19),
+                        ),
+                      ),
+                      onPressed: () {
+                        pageIndex.incrementIndex();
+                        Navigator.pushNamed(context, '/second');
+                      },
+                      child: const Padding(
+                        padding: EdgeInsets.all(16.0),
+                        child: Text('next'),
+                      ),
                     ),
-                  ),
-                  onPressed: () {
-                    pageIndex.incrementIndex();
-                    Navigator.pushNamed(context, '/second');
-                  },
-                  child: const Padding(
-                    padding: EdgeInsets.fromLTRB(157, 24.5, 158, 24.5),
-                    child: Text('next'),
                   ),
                 ),
               ],
@@ -150,7 +161,14 @@ class OnboardingScreen extends StatelessWidget {
     );
   }
 }
-Widget buildDot(BuildContext context, bool isActive, Color activeColor, Color inactiveColor, Function() onDotPressed) {
+
+Widget buildDot(
+  BuildContext context,
+  bool isActive,
+  Color activeColor,
+  Color inactiveColor,
+  Function() onDotPressed,
+) {
   return GestureDetector(
     onTap: onDotPressed,
     child: Container(
