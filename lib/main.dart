@@ -1,5 +1,8 @@
+// import 'dart:js';
+
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:juridentt/features/hamburgerMenu/hamburgerIcon.dart';
 import 'package:juridentt/home.dart';
 import 'package:provider/provider.dart';
 import 'provider.dart';
@@ -10,7 +13,9 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
   runApp(MultiProvider(
-      providers: [ChangeNotifierProvider(create: (context) => UserProvider())],
+      providers: [ChangeNotifierProvider(create: (context) => UserProvider()),
+      ChangeNotifierProvider(create: (context)=>ThemeChanger())
+      ],
       child: const MyApp()));
 }
 
@@ -29,13 +34,19 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'jurident',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      onGenerateRoute: (settings) => generateRoute(settings),
-      home: const homescreen(),
+    return Builder(
+      builder: (context) {
+        final themeProvider = Provider.of<ThemeChanger>(context);
+        return MaterialApp(
+          title: 'jurident',
+          themeMode: themeProvider.themeMode,
+          darkTheme: MyThemes.darkTheme,
+          theme: MyThemes.lightTheme,
+          onGenerateRoute: (settings) => generateRoute(settings),
+          initialRoute: HomeScreen.routename,
+      
+        );
+      }
     );
   }
 }
