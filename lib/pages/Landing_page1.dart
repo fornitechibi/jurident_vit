@@ -49,7 +49,7 @@ class _Landing_page1State extends State<Landing_page1> {
                   transform: Matrix4.translationValues(-130, -170, 0),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/images/Rectangle .png"),
+                      image: AssetImage("lib/assets/images/Rectangle .png"),
                     ),
                   ),
                 ),
@@ -80,7 +80,7 @@ class _Landing_page1State extends State<Landing_page1> {
                 transform: Matrix4.translationValues(0, -170, 0),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/Rectangle .png"))),
+                        image: AssetImage("lib/assets/images/Rectangle .png"))),
               ),
               Container(
                 transform: Matrix4.translationValues(200, 195, 0),
@@ -108,7 +108,7 @@ class _Landing_page1State extends State<Landing_page1> {
                 transform: Matrix4.translationValues(130, -170, 0),
                 decoration: BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage("assets/images/Rectangle .png"))),
+                        image: AssetImage("libassets/images/Rectangle .png"))),
               ),
               Container(
                 transform: Matrix4.translationValues(330, 195, 0),

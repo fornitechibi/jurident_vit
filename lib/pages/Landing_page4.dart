@@ -51,7 +51,7 @@ class _Landing_page4State extends State<Landing_page4> {
                   transform: Matrix4.translationValues(-130, -190, 0),
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: AssetImage("assets/images/Rectangle .png"),
+                      image: AssetImage("lib/assets/images/Rectangle .png"),
                     ),
                   ),
                 ),
@@ -81,8 +81,8 @@ class _Landing_page4State extends State<Landing_page4> {
                   transform: Matrix4.translationValues(0, -190, 0),
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image:
-                              AssetImage("assets/images/Rectangle_amber.png"))),
+                          image: AssetImage(
+                              "lib/assets/images/Rectangle_amber.png"))),
                 ),
                 Container(
                   transform: Matrix4.translationValues(200, 195, 0),
@@ -110,7 +110,8 @@ class _Landing_page4State extends State<Landing_page4> {
                   transform: Matrix4.translationValues(130, -190, 0),
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/images/Rectangle .png"))),
+                          image:
+                              AssetImage("lib/assets/images/Rectangle .png"))),
                 ),
                 Container(
                   transform: Matrix4.translationValues(330, 195, 0),
@@ -140,7 +141,8 @@ class _Landing_page4State extends State<Landing_page4> {
                   width: size.width,
                   decoration: BoxDecoration(
                       image: DecorationImage(
-                          image: AssetImage("assets/images/Rectangle_p3.png"))),
+                          image: AssetImage(
+                              "lib/assets/images/Rectangle_p3.png"))),
                 ),
                 Transform(
                   transform: Matrix4.translationValues(0, 360, 0),

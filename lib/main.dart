@@ -20,7 +20,7 @@ void main() async {
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
-  await Firebase.initializeApp();
+  //await Firebase.initializeApp();
   runApp(const MyApp());
 }
 
@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Juridentt',
-      home: Newcase_form(
+      home: LoginScreen(
           //left: "20",
           //quantity: "Total",
           // name: "John",

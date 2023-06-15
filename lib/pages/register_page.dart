@@ -31,7 +31,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                'assets/images/glitter_orange_background.png',
+                'lib/assets/images/glitter_orange_background.png',
               ),
               fit: BoxFit.cover,
             ),
@@ -57,8 +57,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               alignment: Alignment.topCenter,
                               children: [
                                 const Image(
-                                  image:
-                                      AssetImage('assets/images/ellipse.png'),
+                                  image: AssetImage(
+                                      'lib/assets/images/ellipse.png'),
                                   height: 315,
                                   width: 428,
                                   alignment: Alignment.center,
@@ -227,7 +227,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'assets/images/personsymbol.png',
+                                          'lib/assets/images/personsymbol.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -281,7 +281,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'assets/images/mailsymbol.png',
+                                          'lib/assets/images/mailsymbol.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -336,7 +336,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'assets/images/passwordlock.png',
+                                          'lib/assets/images/passwordlock.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -393,7 +393,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'assets/images/passwordlock.png',
+                                          'lib/assets/images/passwordlock.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -478,7 +478,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         Container(
                           margin: const EdgeInsets.only(top: 9),
                           child: const Image(
-                            image: AssetImage('assets/images/divider.png'),
+                            image: AssetImage('lib/assets/images/divider.png'),
                             height: 1,
                             width: 348,
                             alignment: Alignment.topCenter,
@@ -507,14 +507,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Image(
-                          image: AssetImage('assets/images/facebook_logo.png'),
+                          image:
+                              AssetImage('lib/assets/images/facebook_logo.png'),
                           height: 45,
                           width: 45,
                         ),
                         Container(
                           margin: const EdgeInsets.only(left: 50),
                           child: const Image(
-                            image: AssetImage('assets/images/google_logo.png'),
+                            image:
+                                AssetImage('lib/assets/images/google_logo.png'),
                             height: 45,
                             width: 43,
                           ),
@@ -523,7 +525,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                           margin: const EdgeInsets.only(
                               left: 50, top: 4, bottom: 4),
                           child: const Image(
-                            image: AssetImage('assets/images/twitter_logo.png'),
+                            image: AssetImage(
+                                'lib/assets/images/twitter_logo.png'),
                             height: 36,
                             width: 45,
                           ),
