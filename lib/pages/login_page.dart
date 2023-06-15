@@ -31,7 +31,7 @@ class _LoginScreenState extends State<LoginScreen> {
           decoration: const BoxDecoration(
             image: DecorationImage(
               image: AssetImage(
-                'lib/assets/images/glitter_orange_background.png',
+                'assets/images/glitter_orange_background.png',
               ),
               fit: BoxFit.cover,
             ),
@@ -57,8 +57,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               alignment: Alignment.topCenter,
                               children: [
                                 const Image(
-                                  image: AssetImage(
-                                      'lib/assets/images/ellipse.png'),
+                                  image:
+                                      AssetImage('assets/images/ellipse.png'),
                                   height: 315,
                                   width: 428,
                                   alignment: Alignment.center,
@@ -227,7 +227,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'lib/assets/images/mailsymbol.png',
+                                          'assets/images/mailsymbol.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -282,7 +282,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                           bottom: 16,
                                         ),
                                         child: Image.asset(
-                                          'lib/assets/images/passwordlock.png',
+                                          'assets/images/passwordlock.png',
                                           height: 20,
                                           width: 20,
                                         ),
@@ -452,7 +452,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         Container(
                           margin: const EdgeInsets.only(top: 9),
                           child: const Image(
-                            image: AssetImage('lib/assets/images/divider.png'),
+                            image: AssetImage('assets/images/divider.png'),
                             height: 1,
                             width: 348,
                             alignment: Alignment.topCenter,
@@ -481,16 +481,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         const Image(
-                          image:
-                              AssetImage('lib/assets/images/facebook_logo.png'),
+                          image: AssetImage('assets/images/facebook_logo.png'),
                           height: 45,
                           width: 45,
                         ),
                         Container(
                           margin: const EdgeInsets.only(left: 50),
                           child: const Image(
-                            image:
-                                AssetImage('lib/assets/images/google_logo.png'),
+                            image: AssetImage('assets/images/google_logo.png'),
                             height: 45,
                             width: 43,
                           ),
@@ -499,8 +497,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           margin: const EdgeInsets.only(
                               left: 50, top: 4, bottom: 4),
                           child: const Image(
-                            image: AssetImage(
-                                'lib/assets/images/twitter_logo.png'),
+                            image: AssetImage('assets/images/twitter_logo.png'),
                             height: 36,
                             width: 45,
                           ),
