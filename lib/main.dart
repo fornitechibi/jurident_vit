@@ -2,18 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:juridentt/pages/Calender_page.dart';
-import 'package:juridentt/pages/Landing_page1.dart';
-import 'package:juridentt/pages/Landing_page3.dart';
-import 'package:juridentt/pages/Landing_page4.dart';
-import 'package:juridentt/pages/login_page.dart';
-import 'package:juridentt/pages/newcase_form.dart';
-import 'package:juridentt/pages/otp_login_page.dart';
-import 'package:juridentt/pages/schedule_page.dart';
-import 'package:juridentt/pages/schedule_page2.dart';
-import 'package:juridentt/widgets/case_card.dart';
-import 'package:juridentt/widgets/schedule_card.dart';
-import 'package:juridentt/widgets/time_card.dart';
+
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -35,13 +24,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Juridentt',
-      home: Newcase_form(
-          //left: "20",
-          //quantity: "Total",
-          // name: "John",
-          // date: "today",
-          // time: "10:00 AM",
-          ),
+      home: MyApp(),
     );
   }
 }
