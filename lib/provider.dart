@@ -23,7 +23,7 @@ class UserProvider extends ChangeNotifier {
 
 
 class ThemeChanger with ChangeNotifier{
-  ThemeMode themeMode = ThemeMode.dark;
+  ThemeMode themeMode = ThemeMode.light;
   bool get isDarkMode=>themeMode==ThemeMode.dark;
 
 

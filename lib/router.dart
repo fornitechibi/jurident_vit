@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:juridentt/features/CaseNotes/caseNotes.dart';
 import 'package:juridentt/features/hamburgerMenu/hamburgerIcon.dart';
 import 'package:juridentt/home.dart';
 import 'package:juridentt/home.dart';
@@ -14,6 +15,11 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
       return MaterialPageRoute(
         settings: routeSettings,
         builder: (_) => const HamburgerIcon(),
+      );
+      case CaseNotes.routename:
+      return MaterialPageRoute(
+        settings: routeSettings,
+        builder: (_) => const CaseNotes(),
       );
 
     default:
