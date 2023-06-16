@@ -17,7 +17,7 @@ class CaseNotes extends StatelessWidget {
         onPressed: () {
           showModalBottomSheet<dynamic>(
               isScrollControlled: true,
-              backgroundColor: caseNotesBackgroundColor,
+              backgroundColor: themeProvider.isDarkMode?Colors.white:caseNotesBackgroundColor,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
@@ -51,7 +51,9 @@ class CaseNotes extends StatelessWidget {
                               const Text(
                                 "Case Notes",
                                 style: TextStyle(
-                                    fontSize: 24, fontWeight: FontWeight.w600),
+                                    fontSize: 24, fontWeight: FontWeight.w600,
+                                    color: Colors.black
+                                    ),
                               ),
                               SizedBox(
                                 width: screenWidth * 0.3,
@@ -89,7 +91,9 @@ class CaseNotes extends StatelessWidget {
                           child: const Text(
                             "Abhinav's Divorce Case",
                             style: TextStyle(
-                                fontSize: 20, fontWeight: FontWeight.w500),
+                                fontSize: 20, fontWeight: FontWeight.w500,
+                                color: Colors.black
+                                ),
                           ),
                         ),
                         Padding(
