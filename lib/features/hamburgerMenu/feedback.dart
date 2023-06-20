@@ -62,7 +62,19 @@ class _FeedbackPageState extends State<FeedbackPage> {
         'phoneNo':_phone.text.toString(),
         'feedback':_feedback.text.toString()
 
-      }).then((value) => print('Feedback added')).catchError((error)=>print('failed to add feedback:$error'));
+      }).then((value) => ScaffoldMessenger.of(context).showSnackBar(
+        
+        const SnackBar(
+          behavior: SnackBarBehavior.floating,
+          margin: EdgeInsets.all(20),
+          
+          // padding: EdgeInsets.all(20),
+          backgroundColor: Colors.green,
+          content: Text("Your feedback was recorded",style: TextStyle(color: Colors.white),))
+
+      )
+      
+      ).catchError((error)=>print('failed to add feedback:$error'));
 
     }
     // _collectionReference.get();
