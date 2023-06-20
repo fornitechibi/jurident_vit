@@ -1,6 +1,10 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:juridentt/features/client_search/widgets.dart';
+import 'package:juridentt/features/hamburgerMenu/aboutUs.dart';
+import 'package:juridentt/features/hamburgerMenu/faq.dart';
+import 'package:juridentt/features/hamburgerMenu/feedback.dart';
+import 'package:juridentt/features/hamburgerMenu/terms.dart';
 // import 'package:jurident/colors.dart';
 // import 'package:jurident/theme_changer_provider.dart';
 // import 'package:jurident/theme_changer_provider.dart';
@@ -88,8 +92,16 @@ class _HamburgerIconState extends State<HamburgerIcon> {
                 ],
               ),
             ),
-            const CustomListTile(title: "Terms and Conditions"),
-           const CustomListTile(title: "About Us"),
+            InkWell(
+              onTap: (){
+                Navigator.pushNamed(context,TermsAndConditions.routeName);
+              },
+              child: const CustomListTile(title: "Terms and Conditions")),
+           InkWell(
+            onTap: (){
+              Navigator.pushNamed(context, AboutUsScreen.routeName);
+            },
+            child: const CustomListTile(title: "About Us")),
             ListTile(
                 title: const Text("Dark Mode",
                     style:
@@ -123,8 +135,16 @@ class _HamburgerIconState extends State<HamburgerIcon> {
                 ),
             const CustomListTile(title: "Contact Us"),
             const CustomListTile(title: "Support Chat"),
-            const CustomListTile(title: "FAQ"),
-            const CustomListTile(title: "Feedback Page"),
+            InkWell(
+              onTap: (){
+                Navigator.pushNamed(context,FAQ.routename);
+              },
+              child: const CustomListTile(title: "FAQ")),
+            InkWell(
+              onTap: (){
+                Navigator.pushNamed(context, FeedbackPage.routename);
+              },
+              child: const CustomListTile(title: "Feedback Page")),
             SizedBox(
               height: screenHeight*0.05,
             ),

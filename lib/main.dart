@@ -38,6 +38,7 @@ class _MyAppState extends State<MyApp> {
       builder: (context) {
         final themeProvider = Provider.of<ThemeChanger>(context);
         return MaterialApp(
+          debugShowCheckedModeBanner: false,
           title: 'jurident',
           themeMode: themeProvider.themeMode,
           darkTheme: MyThemes.darkTheme,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:juridentt/features/CaseNotes/caseNotes.dart';
+import 'package:juridentt/features/CaseNotes/CaseNotes.dart';
+// import 'package:juridentt/features/CaseNotes/caseNotes.dart';
 import 'package:juridentt/provider.dart';
 import 'package:provider/provider.dart';
 
@@ -59,7 +60,7 @@ class _HomeScreenState extends State<HomeScreen> {
         drawer:const HamburgerIcon(),
         body: const Column(
           children: [
-            Center(child: CaseNotes())
+            Center(child: CaseNote())
           ],
         ),
       ),
