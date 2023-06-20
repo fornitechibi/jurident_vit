@@ -1,21 +1,17 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get_core/get_core.dart';
+import 'package:get/get_navigation/get_navigation.dart';
 import 'package:juridentt/pages/Landing_page3.dart';
-import 'package:juridentt/pages/Landing_page4.dart';
-import 'package:juridentt/pages/Landing_page5.dart';
 import 'package:juridentt/pages/login_page.dart';
-import 'package:juridentt/widgets/case_card.dart';
 
-class Landing_page1 extends StatefulWidget {
-  const Landing_page1({super.key});
+class Temp extends StatefulWidget {
+  const Temp({super.key});
 
   @override
-  State<Landing_page1> createState() => _Landing_page1State();
+  State<Temp> createState() => _TempState();
 }
 
-class _Landing_page1State extends State<Landing_page1> {
+class _TempState extends State<Temp> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -47,13 +43,44 @@ class _Landing_page1State extends State<Landing_page1> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Get.to(
-                            () => Landing_page3(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
+                        print("prssed");
+                      },
+                      child: Container(
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/Rectangle_amber.png"))),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("3",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 33,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            Text("Open\nCases",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 18,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.normal,
+                                )),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print("prssed");
                       },
                       child: Container(
                         height: 120,
@@ -90,13 +117,7 @@ class _Landing_page1State extends State<Landing_page1> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.to(
-                            () => Landing_page4(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
+                        print("prssed");
                       },
                       child: Container(
                         height: 120,
@@ -116,50 +137,7 @@ class _Landing_page1State extends State<Landing_page1> {
                                   fontStyle: FontStyle.normal,
                                   fontWeight: FontWeight.bold,
                                 )),
-                            Text("Closed\nCases",
-                                style: TextStyle(
-                                  color: Colors.amber,
-                                  fontFamily: 'Satoshi',
-                                  fontSize: 18,
-                                  fontStyle: FontStyle.normal,
-                                  fontWeight: FontWeight.normal,
-                                )),
-                          ],
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 12,
-                    ),
-                    InkWell(
-                      onTap: () {
-                        Get.to(
-                            () => Landing_page5(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
-                      },
-                      child: Container(
-                        height: 120,
-                        width: 120,
-                        decoration: BoxDecoration(
-                            image: DecorationImage(
-                                image: AssetImage(
-                                    "assets/images/Rectangle .png"))),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: [
-                            Text("3",
-                                style: TextStyle(
-                                  color: Colors.amber,
-                                  fontFamily: 'Satoshi',
-                                  fontSize: 33,
-                                  fontStyle: FontStyle.normal,
-                                  fontWeight: FontWeight.bold,
-                                )),
-                            Text("Upcoming\nCases",
+                            Text("Open\nCases",
                                 style: TextStyle(
                                   color: Colors.amber,
                                   fontFamily: 'Satoshi',
@@ -174,6 +152,19 @@ class _Landing_page1State extends State<Landing_page1> {
                   ],
                 ),
               ),
+              Column(
+                children: [
+                  Container(
+                    transform: Matrix4.translationValues(0, -120, 0),
+                    height: size.height,
+                    width: size.width,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image:
+                                AssetImage("assets/images/Rectangle_p3.png"))),
+                  )
+                ],
+              )
             ],
           ),
         ),

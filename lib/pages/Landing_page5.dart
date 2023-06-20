@@ -1,21 +1,23 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:juridentt/pages/Landing_page3.dart';
-import 'package:juridentt/pages/Landing_page4.dart';
-import 'package:juridentt/pages/Landing_page5.dart';
-import 'package:juridentt/pages/login_page.dart';
 import 'package:juridentt/widgets/case_card.dart';
 
-class Landing_page1 extends StatefulWidget {
-  const Landing_page1({super.key});
+class Landing_page5 extends StatefulWidget {
+  int case_num;
+  String case_name;
+  String party_name;
+
+  Landing_page5(
+      {super.key,
+      required this.case_name,
+      required this.case_num,
+      required this.party_name});
 
   @override
-  State<Landing_page1> createState() => _Landing_page1State();
+  State<Landing_page5> createState() => _Landing_page5State();
 }
 
-class _Landing_page1State extends State<Landing_page1> {
+class _Landing_page5State extends State<Landing_page5> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -47,13 +49,7 @@ class _Landing_page1State extends State<Landing_page1> {
                   children: [
                     InkWell(
                       onTap: () {
-                        Get.to(
-                            () => Landing_page3(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
+                        Get.back();
                       },
                       child: Container(
                         height: 120,
@@ -90,13 +86,7 @@ class _Landing_page1State extends State<Landing_page1> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.to(
-                            () => Landing_page4(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
+                        Get.back();
                       },
                       child: Container(
                         height: 120,
@@ -133,13 +123,7 @@ class _Landing_page1State extends State<Landing_page1> {
                     ),
                     InkWell(
                       onTap: () {
-                        Get.to(
-                            () => Landing_page5(
-                                case_name: "murder",
-                                case_num: 1234,
-                                party_name: "bjp"),
-                            transition: Transition.fade,
-                            duration: Duration(seconds: 1));
+                        Get.back();
                       },
                       child: Container(
                         height: 120,
@@ -147,13 +131,13 @@ class _Landing_page1State extends State<Landing_page1> {
                         decoration: BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
-                                    "assets/images/Rectangle .png"))),
+                                    "assets/images/Rectangle_amber.png"))),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("3",
                                 style: TextStyle(
-                                  color: Colors.amber,
+                                  color: Colors.black,
                                   fontFamily: 'Satoshi',
                                   fontSize: 33,
                                   fontStyle: FontStyle.normal,
@@ -161,7 +145,7 @@ class _Landing_page1State extends State<Landing_page1> {
                                 )),
                             Text("Upcoming\nCases",
                                 style: TextStyle(
-                                  color: Colors.amber,
+                                  color: Colors.black,
                                   fontFamily: 'Satoshi',
                                   fontSize: 18,
                                   fontStyle: FontStyle.normal,
@@ -174,6 +158,34 @@ class _Landing_page1State extends State<Landing_page1> {
                   ],
                 ),
               ),
+              Column(
+                children: [
+                  Container(
+                    transform: Matrix4.translationValues(0, -120, 0),
+                    height: size.height,
+                    width: size.width,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image:
+                                AssetImage("assets/images/Rectangle_p3.png"))),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 180),
+                      child: Column(
+                        children: [
+                          Casecard(
+                              case_name: widget.case_name,
+                              party_name: widget.party_name,
+                              case_num: widget.case_num),
+                          Casecard(
+                              case_name: widget.case_name,
+                              party_name: widget.party_name,
+                              case_num: widget.case_num)
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),

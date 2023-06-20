@@ -22,142 +22,170 @@ class _Landing_page3State extends State<Landing_page3> {
     final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        resizeToAvoidBottomInset: false,
         body: SingleChildScrollView(
-          child: Container(
-            width: size.width,
-            height: size.height,
-            decoration: const BoxDecoration(
-              color: Colors.white,
-            ),
-            child: Stack(
-              children: [
-                Container(
-                  transform: Matrix4.translationValues(130, 80, 0),
-                  child: Text(
-                    "JURIDENT",
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.black,
-                      fontSize: 30,
-                      fontFamily: 'Satoshi',
-                      fontWeight: FontWeight.w500,
-                      fontStyle: FontStyle.normal,
+          scrollDirection: Axis.vertical,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              Padding(
+                padding: EdgeInsets.only(left: 0, top: 80),
+                child: Text(
+                  "Jurident",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.black,
+                    fontSize: 30,
+                    fontFamily: 'Satoshi',
+                    fontWeight: FontWeight.w500,
+                    fontStyle: FontStyle.normal,
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 15, top: 30),
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    InkWell(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: Container(
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/Rectangle_amber.png"))),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("3",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 33,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            Text("Open\nCases",
+                                style: TextStyle(
+                                  color: Colors.black,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 18,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.normal,
+                                )),
+                          ],
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(-130, -190, 0),
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: AssetImage("assets/images/Rectangle_amber.png"),
+                    SizedBox(
+                      width: 12,
                     ),
-                  ),
+                    InkWell(
+                      onTap: () {
+                        print("prssed");
+                      },
+                      child: Container(
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/Rectangle .png"))),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("3",
+                                style: TextStyle(
+                                  color: Colors.amber,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 33,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            Text("Closed\nCases",
+                                style: TextStyle(
+                                  color: Colors.amber,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 18,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.normal,
+                                )),
+                          ],
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 12,
+                    ),
+                    InkWell(
+                      onTap: () {
+                        print("prssed");
+                      },
+                      child: Container(
+                        height: 120,
+                        width: 120,
+                        decoration: BoxDecoration(
+                            image: DecorationImage(
+                                image: AssetImage(
+                                    "assets/images/Rectangle .png"))),
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text("3",
+                                style: TextStyle(
+                                  color: Colors.amber,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 33,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.bold,
+                                )),
+                            Text("Upcoming\nCases",
+                                style: TextStyle(
+                                  color: Colors.amber,
+                                  fontFamily: 'Satoshi',
+                                  fontSize: 18,
+                                  fontStyle: FontStyle.normal,
+                                  fontWeight: FontWeight.normal,
+                                )),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ],
                 ),
-                Container(
-                  transform: Matrix4.translationValues(65, 195, 0),
-                  child: Text("3",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Satoshi',
-                        fontSize: 33,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(50, 240, 0),
-                  child: Text("Open\nCases",
-                      style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Satoshi',
-                        fontSize: 18,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.normal,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(0, -190, 0),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/Rectangle .png"))),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(200, 195, 0),
-                  child: Text("2",
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontFamily: 'Satoshi',
-                        fontSize: 33,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(180, 240, 0),
-                  child: Text("Closed\nCases",
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontFamily: 'Satoshi',
-                        fontSize: 18,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.normal,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(130, -190, 0),
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/Rectangle .png"))),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(330, 195, 0),
-                  child: Text("4",
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontFamily: 'Satoshi',
-                        fontSize: 33,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.bold,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(300, 240, 0),
-                  child: Text("Upcoming\nCases",
-                      style: TextStyle(
-                        color: Colors.amber,
-                        fontFamily: 'Satoshi',
-                        fontSize: 18,
-                        fontStyle: FontStyle.normal,
-                        fontWeight: FontWeight.normal,
-                      )),
-                ),
-                Container(
-                  transform: Matrix4.translationValues(0, 210, 0),
-                  height: size.height,
-                  width: size.width,
-                  decoration: BoxDecoration(
-                      image: DecorationImage(
-                          image: AssetImage("assets/images/Rectangle_p3.png"))),
-                ),
-                Transform(
-                  transform: Matrix4.translationValues(0, 360, 0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.center,
-                    children: [
-                      Casecard(
-                          case_name: widget.case_name,
-                          party_name: widget.party_name,
-                          case_num: widget.case_num),
-                      Casecard(
-                          case_name: widget.case_name,
-                          party_name: widget.party_name,
-                          case_num: widget.case_num)
-                    ],
-                  ),
-                )
-              ],
-            ),
+              ),
+              Column(
+                children: [
+                  Container(
+                    transform: Matrix4.translationValues(0, -120, 0),
+                    height: size.height,
+                    width: size.width,
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image:
+                                AssetImage("assets/images/Rectangle_p3.png"))),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 180),
+                      child: Column(
+                        children: [
+                          Casecard(
+                              case_name: widget.case_name,
+                              party_name: widget.party_name,
+                              case_num: widget.case_num),
+                          Casecard(
+                              case_name: widget.case_name,
+                              party_name: widget.party_name,
+                              case_num: widget.case_num)
+                        ],
+                      ),
+                    ),
+                  )
+                ],
+              )
+            ],
           ),
         ),
       ),
