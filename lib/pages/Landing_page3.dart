@@ -168,20 +168,14 @@ class _Landing_page3State extends State<Landing_page3> {
                             image:
                                 AssetImage("assets/images/Rectangle_p3.png"))),
                     child: Padding(
-                      padding: const EdgeInsets.only(top: 180),
-                      child: Column(
-                        children: [
-                          Casecard(
+                        padding: const EdgeInsets.only(top: 180),
+                        child: ListView.builder(
+                          itemCount: 6,
+                          itemBuilder: (context, index) => Casecard(
                               case_name: widget.case_name,
                               party_name: widget.party_name,
                               case_num: widget.case_num),
-                          Casecard(
-                              case_name: widget.case_name,
-                              party_name: widget.party_name,
-                              case_num: widget.case_num)
-                        ],
-                      ),
-                    ),
+                        )),
                   )
                 ],
               )
