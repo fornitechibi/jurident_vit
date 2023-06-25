@@ -10,6 +10,7 @@ import 'package:juridentt/pages/Landing_page5.dart';
 import 'package:juridentt/pages/Landing_page3.dart';
 import 'package:juridentt/pages/Landing_page4.dart';
 import 'package:juridentt/pages/Myfile.dart';
+import 'package:juridentt/pages/dashboard.dart';
 import 'package:juridentt/pages/login_page.dart';
 import 'package:juridentt/pages/navigator.dart';
 import 'package:juridentt/pages/newcase_form.dart';
@@ -41,7 +42,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Juridentt',
-      home: BookmarksPage2(
+      home: MyWidget(
           // case_name: "murder",
           // case_num: 1234,
           // party_name: "bjp",
