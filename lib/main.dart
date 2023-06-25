@@ -2,6 +2,8 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:juridentt/pages/Bookmarks2.dart';
+import 'package:juridentt/pages/Bookmarks_page.dart';
 import 'package:juridentt/pages/Calender_page.dart';
 import 'package:juridentt/pages/Landing_page1.dart';
 import 'package:juridentt/pages/Landing_page5.dart';
@@ -39,7 +41,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Juridentt',
-      home: Myfiles(
+      home: BookmarksPage2(
           // case_name: "murder",
           // case_num: 1234,
           // party_name: "bjp",

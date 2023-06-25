@@ -1,33 +1,27 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:juridentt/pages/schedule_page2.dart';
-import 'package:juridentt/pages/temp.dart';
-import 'package:juridentt/widgets/Case_card2.dart';
-import 'package:juridentt/widgets/Case_card2_new.dart';
-import 'package:juridentt/widgets/case_card.dart';
+import 'package:juridentt/pages/Myfile.dart';
 
-class Myfiles extends StatefulWidget {
-  const Myfiles({super.key});
+import '../widgets/Case_card2_new.dart';
+
+class BookmarksPage2 extends StatefulWidget {
+  const BookmarksPage2({super.key});
 
   @override
-  State<Myfiles> createState() => _MyfilesState();
+  State<BookmarksPage2> createState() => _BookmarksPage2State();
 }
 
-//! Use Newcasecard2 for proper alignment but made with stack
-//! Use Casecard2 for trying it make resposive made with column
-class _MyfilesState extends State<Myfiles> {
+class _BookmarksPage2State extends State<BookmarksPage2> {
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
-        resizeToAvoidBottomInset: true,
+        resizeToAvoidBottomInset: false,
         backgroundColor: Colors.black,
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
-            mainAxisSize: MainAxisSize.max,
             children: [
               Transform(
                 transform: Matrix4.translationValues(0, 10, 0),
@@ -46,7 +40,7 @@ class _MyfilesState extends State<Myfiles> {
               Transform(
                 transform: Matrix4.translationValues(-130, 25, 0),
                 child: Text(
-                  "My Files",
+                  " Book Marks",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Color(0xffC99F4A),
@@ -78,9 +72,7 @@ class _MyfilesState extends State<Myfiles> {
                         Transform(
                           transform: Matrix4.translationValues(20, 30, 0),
                           child: ElevatedButton(
-                            onPressed: () {
-                              Get.back();
-                            },
+                            onPressed: () {},
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
@@ -171,10 +163,48 @@ class _MyfilesState extends State<Myfiles> {
                 decoration: BoxDecoration(
                   color: Colors.black,
                 ),
-                child: ListView.builder(
-                    itemCount: 6,
-                    shrinkWrap: true,
-                    itemBuilder: (context, index) => NewCasecard2()),
+                child: Column(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(top: 80),
+                      child: Container(
+                          child: Image.asset("assets/images/nofiles.png")),
+                    ),
+                    SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      'No Files Found',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xFFC99F4A),
+                        fontSize: 30,
+                        fontFamily: 'Satoshi',
+                        fontWeight: FontWeight.w400,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          fixedSize: const Size(127, 26),
+                          backgroundColor: Color(0xFFC99F4A)),
+                      onPressed: () {
+                        Get.to(() => Myfiles());
+                      },
+                      child: Text(
+                        'Files',
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 15,
+                          fontFamily: 'Satoshi',
+                          fontWeight: FontWeight.w400,
+                        ),
+                      ),
+                    )
+                  ],
+                ),
               ),
             ],
           ),
