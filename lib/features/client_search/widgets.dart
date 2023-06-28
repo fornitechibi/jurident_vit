@@ -188,77 +188,77 @@ class CustomeCaseNotes extends StatelessWidget {
                             ),
                           ),
                         ),
-                        SizedBox(
-                          height: screenHeight * 0.016,
-                        ),
-                        Padding(
-                          padding: EdgeInsets.only(
-                              left: screenWidth * 0.07,
-                              right: screenWidth * 0.07),
-                          child: Container(
-                            decoration: BoxDecoration(
-                                color: formFillColor,
-                                borderRadius: BorderRadius.circular(10)),
-                            child: Row(
-                              children: [
-                                TextButton(
-                                    onPressed: () {},
-                                    child: const Text(
-                                      "B",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                          fontSize: 20),
-                                    )),
-                                TextButton(
-                                    onPressed: () {
-                                      // onButtonPressed(!isItalic);
-                                    },
-                                    child: const Text(
-                                      "/",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                          fontSize: 20),
-                                    )),
-                                TextButton(
-                                    onPressed: () {},
-                                    child: const Text(
-                                      "U",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold,
-                                          color: Colors.white,
-                                          fontSize: 20),
-                                    )),
-                                // Spacer(),
-                                SizedBox(
-                                  width: screenWidth * 0.067,
-                                ),
-                                InkWell(
-                                  onTap: () {},
-                                  child: Container(
-                                    height: 20,
-                                    width: 20,
-                                    decoration: BoxDecoration(
-                                        border: Border.all(),
-                                        borderRadius: BorderRadius.circular(20),
-                                        color: Colors.red),
-                                    child: const Text(""),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: screenWidth * 0.067,
-                                ),
-                                IconButton(
-                                    onPressed: () {},
-                                    icon: const Icon(
-                                      Icons.menu_outlined,
-                                      color: Colors.white,
-                                    ))
-                              ],
-                            ),
-                          ),
-                        ),
+                        // SizedBox(
+                        //   height: screenHeight * 0.016,
+                        // ),
+                        // Padding(
+                        //   padding: EdgeInsets.only(
+                        //       left: screenWidth * 0.07,
+                        //       right: screenWidth * 0.07),
+                        //   child: Container(
+                        //     decoration: BoxDecoration(
+                        //         color: formFillColor,
+                        //         borderRadius: BorderRadius.circular(10)),
+                        //     child: Row(
+                        //       children: [
+                        //         TextButton(
+                        //             onPressed: () {},
+                        //             child: const Text(
+                        //               "B",
+                        //               style: TextStyle(
+                        //                   fontWeight: FontWeight.bold,
+                        //                   color: Colors.white,
+                        //                   fontSize: 20),
+                        //             )),
+                        //         TextButton(
+                        //             onPressed: () {
+                        //               // onButtonPressed(!isItalic);
+                        //             },
+                        //             child: const Text(
+                        //               "/",
+                        //               style: TextStyle(
+                        //                   fontWeight: FontWeight.bold,
+                        //                   color: Colors.white,
+                        //                   fontSize: 20),
+                        //             )),
+                        //         TextButton(
+                        //             onPressed: () {},
+                        //             child: const Text(
+                        //               "U",
+                        //               style: TextStyle(
+                        //                   fontWeight: FontWeight.bold,
+                        //                   color: Colors.white,
+                        //                   fontSize: 20),
+                        //             )),
+                        //         // Spacer(),
+                        //         SizedBox(
+                        //           width: screenWidth * 0.067,
+                        //         ),
+                        //         InkWell(
+                        //           onTap: () {},
+                        //           child: Container(
+                        //             height: 20,
+                        //             width: 20,
+                        //             decoration: BoxDecoration(
+                        //                 border: Border.all(),
+                        //                 borderRadius: BorderRadius.circular(20),
+                        //                 color: Colors.red),
+                        //             child: const Text(""),
+                        //           ),
+                        //         ),
+                        //         SizedBox(
+                        //           width: screenWidth * 0.067,
+                        //         ),
+                        //         IconButton(
+                        //             onPressed: () {},
+                        //             icon: const Icon(
+                        //               Icons.menu_outlined,
+                        //               color: Colors.white,
+                        //             ))
+                        //       ],
+                        //     ),
+                        //   ),
+                        // ),
                         const SizedBox(
                           height: 8,
                         )

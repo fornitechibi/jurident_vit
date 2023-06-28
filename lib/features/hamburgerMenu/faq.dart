@@ -131,7 +131,7 @@ class _FAQState extends State<FAQ> {
                                 fontSize: 20, color: darkModeButtonColor),
                           ),
                         ),
-                        SizedBox(
+                        const SizedBox(
                           height: 7,
                         ),
                         GFAccordion(
@@ -140,7 +140,7 @@ class _FAQState extends State<FAQ> {
                                 ? backColor
                                 : darkModeButtonColor,
                           ),
-                          contentPadding: EdgeInsets.only(top: 30),
+                          contentPadding: const EdgeInsets.only(top: 30),
                           expandedTitleBackgroundColor:
                               themeProvider.isDarkMode
                                   ? Colors.white
@@ -163,7 +163,7 @@ class _FAQState extends State<FAQ> {
             
                           title:
                               'What legal services are offered on this app?',
-                          contentChild: Text(
+                          contentChild: const Text(
                             'Lorem Ipsum',
                             style: TextStyle(
                                 color: Colors
@@ -189,7 +189,7 @@ class _FAQState extends State<FAQ> {
                               themeProvider.isDarkMode
                                   ? Colors.white
                                   : backColor,
-                          contentPadding: EdgeInsets.only(top: 30),
+                          contentPadding: const EdgeInsets.only(top: 30),
                           // contentBorder:
                           //     Border.all(color: darkModeButtonColor),
                           titleBorder: Border.all(
@@ -208,7 +208,7 @@ class _FAQState extends State<FAQ> {
             
                           title:
                               'How do I communicate with a lawyer on this app?',
-                          contentChild: Text(
+                          contentChild: const Text(
                             'Lorem Ipsum',
                             style: TextStyle(
                                 color: Colors
@@ -225,7 +225,7 @@ class _FAQState extends State<FAQ> {
                           ),
                         ),
                         GFAccordion(
-                          contentPadding: EdgeInsets.only(top: 30),
+                          contentPadding: const EdgeInsets.only(top: 30),
                           textStyle: TextStyle(
                             color: themeProvider.isDarkMode
                                 ? backColor
@@ -252,7 +252,7 @@ class _FAQState extends State<FAQ> {
                           // showAccordion: true,
             
                           title: 'How much does this app cost?',
-                          contentChild: Text(
+                          contentChild: const Text(
                             'Lorem Ipsum',
                             style: TextStyle(
                                 color: Colors
@@ -268,7 +268,7 @@ class _FAQState extends State<FAQ> {
                           ),
                         ),
                         GFAccordion(
-                          contentPadding: EdgeInsets.only(top: 30),
+                          contentPadding: const EdgeInsets.only(top: 30),
                           textStyle: TextStyle(
                             color: themeProvider.isDarkMode
                                 ? backColor
@@ -294,7 +294,7 @@ class _FAQState extends State<FAQ> {
                           // showAccordion: true,
             
                           title: 'Is my information secure on this app?',
-                          contentChild: Text(
+                          contentChild: const Text(
                             'Lorem Ipsum',
                             style: TextStyle(
                                 color: Colors
@@ -312,7 +312,7 @@ class _FAQState extends State<FAQ> {
                           ),
                         ),
                         GFAccordion(
-                          contentPadding: EdgeInsets.only(top: 30),
+                          contentPadding: const EdgeInsets.only(top: 30),
                           textStyle: TextStyle(
                             color: themeProvider.isDarkMode
                                 ? backColor
@@ -340,7 +340,7 @@ class _FAQState extends State<FAQ> {
             
                           title:
                               'Can I use this app if i am outside the US?',
-                          contentChild: Text(
+                          contentChild: const Text(
                             'Lorem Ipsum',
                             style: TextStyle(
                                 color: Colors

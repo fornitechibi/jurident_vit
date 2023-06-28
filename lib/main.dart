@@ -1,8 +1,9 @@
 // import 'dart:js';
 
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:juridentt/features/hamburgerMenu/hamburgerIcon.dart';
+// import 'package:juridentt/features/hamburgerMenu/hamburgerIcon.dart';
 import 'package:juridentt/home.dart';
 import 'package:provider/provider.dart';
 import 'provider.dart';
@@ -12,6 +13,9 @@ import 'router.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  final fcmToken = await FirebaseMessaging.instance.getToken();
+  print(fcmToken);
+
   runApp(MultiProvider(
       providers: [ChangeNotifierProvider(create: (context) => UserProvider()),
       ChangeNotifierProvider(create: (context)=>ThemeChanger())

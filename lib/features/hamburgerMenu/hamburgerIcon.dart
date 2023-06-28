@@ -92,6 +92,7 @@ class _HamburgerIconState extends State<HamburgerIcon> {
                 ],
               ),
             ),
+            SizedBox(height: 10,),
             InkWell(
               onTap: (){
                 Navigator.pushNamed(context,TermsAndConditions.routeName);

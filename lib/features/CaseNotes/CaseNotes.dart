@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:juridentt/features/client_search/widgets.dart';
 
-import '../../constants.dart';
-import '../../provider.dart';
-import 'package:provider/provider.dart';
 
 class CaseNote extends StatefulWidget {
   static const String routename = '/caseNotes';
