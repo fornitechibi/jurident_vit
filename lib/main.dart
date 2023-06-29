@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jurident/models/Landingpage3.dart';
+import 'package:jurident/models/LP.dart';
 import 'package:jurident/screens/aboutusScreen.dart';
 import 'package:jurident/screens/contact_us_screen.dart';
 // import 'package:jurident/screens/mainscreen.dart';
