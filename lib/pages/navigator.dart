@@ -19,16 +19,16 @@ class _MyWidgetState extends State<MyWidget> {
           children: [
             GestureDetector(
               onTap: () {
-                Get.to(() => Landing_page1());
+                Get.to(() => const Landing_page1());
               },
               child: Container(
                 height: 200,
                 width: 200,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("assets/images/button.png"))),
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 90),
+                child: const Padding(
+                  padding: EdgeInsets.only(top: 90),
                   child: Text(
                     "button1",
                     textAlign: TextAlign.center,
@@ -38,16 +38,16 @@ class _MyWidgetState extends State<MyWidget> {
             ),
             GestureDetector(
               onTap: () {
-                Get.to(() => Myfiles());
+                Get.to(() => const Myfiles());
               },
               child: Container(
                 height: 200,
                 width: 200,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                     image: DecorationImage(
                         image: AssetImage("assets/images/button.png"))),
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 90),
+                child: const Padding(
+                  padding: EdgeInsets.only(top: 90),
                   child: Text(
                     "button2",
                     textAlign: TextAlign.center,

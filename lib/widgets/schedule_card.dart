@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Schedulecard extends StatefulWidget {
   String name = "John Doe";
   String date = "Today";
@@ -16,18 +17,18 @@ class _SchedulecardState extends State<Schedulecard> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(0),
+      padding: const EdgeInsets.all(0),
       child: Stack(
         children: [
           Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Container(
               height: 78,
               width: 372,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.white,
-                border: Border.all(width: 3, color: Color(0xFFC99F4A)),
+                border: Border.all(width: 3, color: const Color(0xFFC99F4A)),
               ),
             ),
           ),
@@ -37,8 +38,8 @@ class _SchedulecardState extends State<Schedulecard> {
               Container(
                 transform: Matrix4.translationValues(5, 20, 0),
                 child: Text(
-                  "${widget.name}",
-                  style: TextStyle(
+                  widget.name,
+                  style: const TextStyle(
                     color: Color(0xFFC99F4A),
                     fontFamily: 'Satoshi',
                     fontSize: 20,
@@ -51,7 +52,7 @@ class _SchedulecardState extends State<Schedulecard> {
                 transform: Matrix4.translationValues(50, 30, 0),
                 child: Text(
                   "${widget.date}  ${widget.time}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontFamily: 'Satoshi',
                     fontSize: 18,

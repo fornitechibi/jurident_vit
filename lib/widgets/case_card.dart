@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class Casecard extends StatefulWidget {
   int case_num = 1234;
   String case_name = "murder";
@@ -18,17 +19,17 @@ class _CasecardState extends State<Casecard> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.all(0),
+      padding: const EdgeInsets.all(0),
       child: Stack(
         children: [
           Padding(
-            padding: EdgeInsets.all(10),
+            padding: const EdgeInsets.all(10),
             child: Container(
               height: 140,
               width: 410,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
-                color: Color(0xFFC99F4A),
+                color: const Color(0xFFC99F4A),
                 border: Border.all(width: 3, color: Colors.black),
               ),
             ),
@@ -52,7 +53,7 @@ class _CasecardState extends State<Casecard> {
                   transform: Matrix4.translationValues(0, -10, 0),
                   child: Text(
                     "Case Number : ${widget.case_num}",
-                    style: TextStyle(
+                    style: const TextStyle(
                       color: Colors.black,
                       fontFamily: 'Satoshi',
                       fontSize: 14,
@@ -66,7 +67,7 @@ class _CasecardState extends State<Casecard> {
                 transform: Matrix4.translationValues(75, 5, 0),
                 child: Text(
                   "Case Name : ${widget.case_name}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontFamily: 'Satoshi',
                     fontSize: 14,
@@ -79,7 +80,7 @@ class _CasecardState extends State<Casecard> {
                 transform: Matrix4.translationValues(65, 20, 0),
                 child: Text(
                   "Party Name : ${widget.party_name}",
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.black,
                     fontFamily: 'Satoshi',
                     fontSize: 14,

@@ -25,7 +25,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
             children: [
               Transform(
                 transform: Matrix4.translationValues(0, 10, 0),
-                child: Text(
+                child: const Text(
                   "JURIDENT",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -39,7 +39,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
               ),
               Transform(
                 transform: Matrix4.translationValues(-130, 25, 0),
-                child: Text(
+                child: const Text(
                   " Book Marks",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -51,11 +51,11 @@ class _BookmarksPageState extends State<BookmarksPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 60),
+              const SizedBox(height: 60),
               Container(
                 height: 101,
                 width: size.width,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(width: 0, color: Color(0xFFFAFAFA)),
@@ -76,15 +76,15 @@ class _BookmarksPageState extends State<BookmarksPage> {
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
-                                fixedSize: Size(127, 38),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                fixedSize: const Size(127, 38),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/bookmark.png"),
-                                SizedBox(
+                                const SizedBox(
                                   width: 7,
                                 ),
-                                Text(
+                                const Text(
                                   'Bookmarks',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -97,22 +97,22 @@ class _BookmarksPageState extends State<BookmarksPage> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 80),
+                        const SizedBox(width: 80),
                         Transform(
                           transform: Matrix4.translationValues(10, 30, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
+                                fixedSize: const Size(90, 38),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 ),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             onPressed: () {},
                             child: Row(
                               children: [
                                 Image.asset("assets/images/filter.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Filter',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -130,16 +130,16 @@ class _BookmarksPageState extends State<BookmarksPage> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
-                                backgroundColor: Color(0xFFC99F4A),
+                                fixedSize: const Size(90, 38),
+                                backgroundColor: const Color(0xFFC99F4A),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/sort.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Sort',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -160,20 +160,20 @@ class _BookmarksPageState extends State<BookmarksPage> {
               Container(
                 width: 428,
                 height: size.height,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.amber,
                 ),
                 child: Column(
                   children: [
-                    NewCasecard2(),
+                    const NewCasecard2(),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           fixedSize: const Size(127, 26),
-                          backgroundColor: Color(0xFFC99F4A)),
+                          backgroundColor: const Color(0xFFC99F4A)),
                       onPressed: () {
-                        Get.to(() => Myfiles());
+                        Get.to(() => const Myfiles());
                       },
-                      child: Text(
+                      child: const Text(
                         'Files',
                         style: TextStyle(
                           color: Colors.black,

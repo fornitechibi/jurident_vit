@@ -1,11 +1,12 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+//import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:juridentt/pages/schedule_page2.dart';
-import 'package:juridentt/pages/temp.dart';
-import 'package:juridentt/widgets/Case_card2.dart';
+import 'package:juridentt/pages/Bookmarks_page.dart';
+//import 'package:juridentt/pages/schedule_page2.dart';
+//import 'package:juridentt/pages/temp.dart';
+//import 'package:juridentt/widgets/Case_card2.dart';
 import 'package:juridentt/widgets/Case_card2_new.dart';
-import 'package:juridentt/widgets/case_card.dart';
+//import 'package:juridentt/widgets/case_card.dart';
 
 class Myfiles extends StatefulWidget {
   const Myfiles({super.key});
@@ -31,7 +32,7 @@ class _MyfilesState extends State<Myfiles> {
             children: [
               Transform(
                 transform: Matrix4.translationValues(0, 10, 0),
-                child: Text(
+                child: const Text(
                   "JURIDENT",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -45,7 +46,7 @@ class _MyfilesState extends State<Myfiles> {
               ),
               Transform(
                 transform: Matrix4.translationValues(-130, 25, 0),
-                child: Text(
+                child: const Text(
                   "My Files",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -57,11 +58,11 @@ class _MyfilesState extends State<Myfiles> {
                   ),
                 ),
               ),
-              SizedBox(height: 60),
+              const SizedBox(height: 60),
               Container(
                 height: 101,
                 width: size.width,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   color: Colors.black,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(width: 0, color: Color(0xFFFAFAFA)),
@@ -79,20 +80,20 @@ class _MyfilesState extends State<Myfiles> {
                           transform: Matrix4.translationValues(20, 30, 0),
                           child: ElevatedButton(
                             onPressed: () {
-                              Get.back();
+                              Get.to(() => const BookmarksPage());
                             },
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
-                                fixedSize: Size(127, 38),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                fixedSize: const Size(127, 38),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/bookmark.png"),
-                                SizedBox(
+                                const SizedBox(
                                   width: 7,
                                 ),
-                                Text(
+                                const Text(
                                   'Bookmarks',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -105,22 +106,22 @@ class _MyfilesState extends State<Myfiles> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 80),
+                        const SizedBox(width: 80),
                         Transform(
                           transform: Matrix4.translationValues(10, 30, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
+                                fixedSize: const Size(90, 38),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 ),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             onPressed: () {},
                             child: Row(
                               children: [
                                 Image.asset("assets/images/filter.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Filter',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -138,16 +139,16 @@ class _MyfilesState extends State<Myfiles> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
-                                backgroundColor: Color(0xFFC99F4A),
+                                fixedSize: const Size(90, 38),
+                                backgroundColor: const Color(0xFFC99F4A),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/sort.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Sort',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -168,13 +169,13 @@ class _MyfilesState extends State<Myfiles> {
               Container(
                 width: 428,
                 height: size.height,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.black,
                 ),
                 child: ListView.builder(
                     itemCount: 6,
                     shrinkWrap: true,
-                    itemBuilder: (context, index) => NewCasecard2()),
+                    itemBuilder: (context, index) => const NewCasecard2()),
               ),
             ],
           ),

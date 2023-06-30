@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:juridentt/pages/otp_login_page.dart';
+//import 'package:juridentt/pages/otp_login_page.dart';
 import 'package:juridentt/pages/register_page.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -183,9 +183,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      RegisterScreen()));
+                                                      const RegisterScreen()));
                                         },
-                                        child: Padding(
+                                        child: const Padding(
                                           padding: EdgeInsets.only(
                                               left: 28, bottom: 2),
                                           child: Text(
@@ -414,7 +414,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                RegisterScreen()));
+                                                const RegisterScreen()));
                                   },
                                   child: const Text(
                                     "Send OTP",

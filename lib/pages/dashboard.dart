@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:juridentt/pages/Landing_page1.dart';
 
 import 'Landing_page3.dart';
 import 'Landing_page4.dart';
 import 'Landing_page5.dart';
 
 class DashboardPage extends StatelessWidget {
-  final yellow = Color(0xffC99F4A);
+  final yellow = const Color(0xffC99F4A);
+
+  const DashboardPage({super.key});
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
@@ -26,7 +27,7 @@ class DashboardPage extends StatelessWidget {
                 children: [
                   Column(
                     children: [
-                      Padding(
+                      const Padding(
                         padding: EdgeInsets.only(left: 0, top: 30),
                         child: Text(
                           "JURIDENT",
@@ -53,12 +54,12 @@ class DashboardPage extends StatelessWidget {
                                         case_num: 1234,
                                         party_name: "bjp"),
                                     transition: Transition.fade,
-                                    duration: Duration(seconds: 1));
+                                    duration: const Duration(seconds: 1));
                               },
                               child: Container(
                                 height: 120,
                                 width: 120,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/Rectangle .png"))),
@@ -85,7 +86,7 @@ class DashboardPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             InkWell(
@@ -96,12 +97,12 @@ class DashboardPage extends StatelessWidget {
                                         case_num: 1234,
                                         party_name: "bjp"),
                                     transition: Transition.fade,
-                                    duration: Duration(seconds: 1));
+                                    duration: const Duration(seconds: 1));
                               },
                               child: Container(
                                 height: 120,
                                 width: 120,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/Rectangle .png"))),
@@ -128,7 +129,7 @@ class DashboardPage extends StatelessWidget {
                                 ),
                               ),
                             ),
-                            SizedBox(
+                            const SizedBox(
                               width: 12,
                             ),
                             InkWell(
@@ -139,12 +140,12 @@ class DashboardPage extends StatelessWidget {
                                         case_num: 1234,
                                         party_name: "bjp"),
                                     transition: Transition.fade,
-                                    duration: Duration(seconds: 1));
+                                    duration: const Duration(seconds: 1));
                               },
                               child: Container(
                                 height: 120,
                                 width: 120,
-                                decoration: BoxDecoration(
+                                decoration: const BoxDecoration(
                                     image: DecorationImage(
                                         image: AssetImage(
                                             "assets/images/Rectangle .png"))),
@@ -176,7 +177,7 @@ class DashboardPage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     width: double.infinity,
                     padding: const EdgeInsets.symmetric(vertical: 8),
@@ -191,12 +192,12 @@ class DashboardPage extends StatelessWidget {
                       ),
                       color: const Color(0xFF050125),
                     ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 10),
-                      child: const Text(
+                    child: const Padding(
+                      padding: EdgeInsets.only(left: 10),
+                      child: Text(
                         'Quick Access',
                         style: TextStyle(
-                          color: const Color(0xFFC99F4A),
+                          color: Color(0xFFC99F4A),
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
@@ -205,14 +206,14 @@ class DashboardPage extends StatelessWidget {
                   ),
                   Container(
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.only(
+                      borderRadius: const BorderRadius.only(
                           bottomLeft: Radius.circular(15),
                           bottomRight: Radius.circular(15)),
                       border: Border.all(
                         color: yellow,
                       ),
                     ),
-                    padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                    padding: const EdgeInsets.fromLTRB(20, 0, 20, 20),
                     child: GridView.count(
                       shrinkWrap: true,
                       crossAxisCount: 3,
@@ -267,21 +268,20 @@ class QuickAccessButton extends StatelessWidget {
   final String label;
   final VoidCallback onTap;
 
-  QuickAccessButton({
+  const QuickAccessButton({super.key, 
     required this.imagePath,
     required this.label,
     required this.onTap,
   });
 
-  final yellow = Color(0xffC99F4A);
+  final yellow = const Color(0xffC99F4A);
 
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
       onPressed: onTap,
       style: ElevatedButton.styleFrom(
-        primary: Colors.black,
-        onPrimary: yellow,
+        foregroundColor: yellow, backgroundColor: Colors.black,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10.0),
         ),
@@ -297,7 +297,7 @@ class QuickAccessButton extends StatelessWidget {
             width: 27.0,
             height: 27.0,
           ),
-          SizedBox(height: 8.0),
+          const SizedBox(height: 8.0),
           Text(
             label,
             textAlign: TextAlign.center,

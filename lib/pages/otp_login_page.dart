@@ -184,9 +184,9 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                               context,
                                               MaterialPageRoute(
                                                   builder: (context) =>
-                                                      RegisterScreen()));
+                                                      const RegisterScreen()));
                                         },
-                                        child: Padding(
+                                        child: const Padding(
                                           padding: EdgeInsets.only(
                                               left: 28, bottom: 2),
                                           child: Text(
@@ -209,7 +209,7 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                 Container(
                                   transform:
                                       Matrix4.translationValues(65, -170, 0),
-                                  child: Text(
+                                  child: const Text(
                                     'OTP Verification',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -224,7 +224,7 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                 Container(
                                   transform:
                                       Matrix4.translationValues(60, -160, 0),
-                                  child: Text(
+                                  child: const Text(
                                     'Enter the OTP sent to',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -239,7 +239,7 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                 Container(
                                   transform:
                                       Matrix4.translationValues(60, -154, 0),
-                                  child: Text(
+                                  child: const Text(
                                     'jur*****@gmail.com',
                                     textAlign: TextAlign.center,
                                     style: TextStyle(
@@ -266,7 +266,7 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                       showDialog(
                                           context: context,
                                           builder: (context) {
-                                            return AlertDialog(
+                                            return const AlertDialog(
                                               title: Text(
                                                 'OTP Verification Success',
                                                 textAlign: TextAlign.center,
@@ -329,7 +329,7 @@ class _OTPLoginScreenState extends State<OTPLoginScreen> {
                                         ),
                                       ),
                                       Container(
-                                        child: Text(
+                                        child: const Text(
                                           "in 1:33",
                                           overflow: TextOverflow.ellipsis,
                                           textAlign: TextAlign.left,

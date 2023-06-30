@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:juridentt/widgets/schedule_card.dart';
 
+// ignore: must_be_immutable
 class Schedule_page extends StatefulWidget {
   String name;
   String date;
@@ -24,7 +25,7 @@ class _Schedule_pageState extends State<Schedule_page> {
             children: [
               Container(
                 transform: Matrix4.translationValues(60, 60, 0),
-                child: Text(
+                child: const Text(
                   "Schedule",
                   style: TextStyle(
                     color: Colors.black,
@@ -59,7 +60,12 @@ class _Schedule_pageState extends State<Schedule_page> {
                     transform: Matrix4.translationValues(50, 300, 0),
                     child: ElevatedButton(
                         onPressed: () {},
-                        child: Text(
+                        style: ElevatedButton.styleFrom(
+                            backgroundColor: const Color(0xFFC99F4A),
+                            fixedSize: const Size(300, 70),
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20))),
+                        child: const Text(
                           "Clear Schedule",
                           style: TextStyle(
                             color: Colors.white,
@@ -68,12 +74,7 @@ class _Schedule_pageState extends State<Schedule_page> {
                             fontStyle: FontStyle.normal,
                             fontWeight: FontWeight.w500,
                           ),
-                        ),
-                        style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0xFFC99F4A),
-                            fixedSize: const Size(300, 70),
-                            shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(20)))),
+                        )),
                   )
                 ],
               )

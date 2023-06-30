@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:juridentt/pages/Myfile.dart';
 
-import '../widgets/Case_card2_new.dart';
-
 class BookmarksPage2 extends StatefulWidget {
   const BookmarksPage2({super.key});
 
@@ -25,7 +23,7 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
             children: [
               Transform(
                 transform: Matrix4.translationValues(0, 10, 0),
-                child: Text(
+                child: const Text(
                   "JURIDENT",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -39,7 +37,7 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
               ),
               Transform(
                 transform: Matrix4.translationValues(-130, 25, 0),
-                child: Text(
+                child: const Text(
                   " Book Marks",
                   textAlign: TextAlign.center,
                   style: TextStyle(
@@ -51,11 +49,11 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                   ),
                 ),
               ),
-              SizedBox(height: 60),
+              const SizedBox(height: 60),
               Container(
                 height: 101,
                 width: size.width,
-                decoration: ShapeDecoration(
+                decoration: const ShapeDecoration(
                   color: Colors.black,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(width: 0, color: Color(0xFFFAFAFA)),
@@ -76,15 +74,15 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                             style: ElevatedButton.styleFrom(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(10)),
-                                fixedSize: Size(127, 38),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                fixedSize: const Size(127, 38),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/bookmark.png"),
-                                SizedBox(
+                                const SizedBox(
                                   width: 7,
                                 ),
-                                Text(
+                                const Text(
                                   'Bookmarks',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -97,22 +95,22 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                             ),
                           ),
                         ),
-                        SizedBox(width: 80),
+                        const SizedBox(width: 80),
                         Transform(
                           transform: Matrix4.translationValues(10, 30, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
+                                fixedSize: const Size(90, 38),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 ),
-                                backgroundColor: Color(0xFFC99F4A)),
+                                backgroundColor: const Color(0xFFC99F4A)),
                             onPressed: () {},
                             child: Row(
                               children: [
                                 Image.asset("assets/images/filter.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Filter',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -130,16 +128,16 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
-                                fixedSize: Size(90, 38),
-                                backgroundColor: Color(0xFFC99F4A),
+                                fixedSize: const Size(90, 38),
+                                backgroundColor: const Color(0xFFC99F4A),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(10),
                                 )),
                             child: Row(
                               children: [
                                 Image.asset("assets/images/sort.png"),
-                                SizedBox(width: 6),
-                                Text(
+                                const SizedBox(width: 6),
+                                const Text(
                                   'Sort',
                                   style: TextStyle(
                                     color: Colors.white,
@@ -160,7 +158,7 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
               Container(
                 width: 428,
                 height: size.height,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Colors.black,
                 ),
                 child: Column(
@@ -170,10 +168,10 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                       child: Container(
                           child: Image.asset("assets/images/nofiles.png")),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
-                    Text(
+                    const Text(
                       'No Files Found',
                       textAlign: TextAlign.center,
                       style: TextStyle(
@@ -183,17 +181,17 @@ class _BookmarksPage2State extends State<BookmarksPage2> {
                         fontWeight: FontWeight.w400,
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
                           fixedSize: const Size(127, 26),
-                          backgroundColor: Color(0xFFC99F4A)),
+                          backgroundColor: const Color(0xFFC99F4A)),
                       onPressed: () {
-                        Get.to(() => Myfiles());
+                        Get.to(() => const Myfiles());
                       },
-                      child: Text(
+                      child: const Text(
                         'Files',
                         style: TextStyle(
                           color: Colors.black,

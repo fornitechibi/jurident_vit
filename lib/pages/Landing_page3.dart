@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:juridentt/widgets/case_card.dart';
 
+// ignore: must_be_immutable
 class Landing_page3 extends StatefulWidget {
   int case_num;
   String case_name;
@@ -27,7 +28,7 @@ class _Landing_page3State extends State<Landing_page3> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.only(left: 0, top: 80),
                 child: Text(
                   "Jurident",
@@ -53,11 +54,11 @@ class _Landing_page3State extends State<Landing_page3> {
                       child: Container(
                         height: 120,
                         width: 120,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
                                     "assets/images/Rectangle_amber.png"))),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("3",
@@ -80,7 +81,7 @@ class _Landing_page3State extends State<Landing_page3> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     InkWell(
@@ -90,11 +91,11 @@ class _Landing_page3State extends State<Landing_page3> {
                       child: Container(
                         height: 120,
                         width: 120,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
                                     "assets/images/Rectangle .png"))),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("3",
@@ -117,7 +118,7 @@ class _Landing_page3State extends State<Landing_page3> {
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 12,
                     ),
                     InkWell(
@@ -127,11 +128,11 @@ class _Landing_page3State extends State<Landing_page3> {
                       child: Container(
                         height: 120,
                         width: 120,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                             image: DecorationImage(
                                 image: AssetImage(
                                     "assets/images/Rectangle .png"))),
-                        child: Column(
+                        child: const Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text("3",
@@ -163,7 +164,7 @@ class _Landing_page3State extends State<Landing_page3> {
                     transform: Matrix4.translationValues(0, -120, 0),
                     height: size.height,
                     width: size.width,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                         image: DecorationImage(
                             image:
                                 AssetImage("assets/images/Rectangle_p3.png"))),

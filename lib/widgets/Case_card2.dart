@@ -12,7 +12,7 @@ class _Casecard2State extends State<Casecard2> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.only(top: 10, bottom: 10),
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
       child: Column(
         children: [
           Container(
@@ -21,10 +21,10 @@ class _Casecard2State extends State<Casecard2> {
             decoration: ShapeDecoration(
               color: Colors.white,
               shape: RoundedRectangleBorder(
-                side: BorderSide(width: 0.50),
+                side: const BorderSide(width: 0.50),
                 borderRadius: BorderRadius.circular(10),
               ),
-              shadows: [
+              shadows: const [
                 BoxShadow(
                   color: Color(0x3F000000),
                   blurRadius: 4,
@@ -36,7 +36,7 @@ class _Casecard2State extends State<Casecard2> {
           ),
           Container(
             transform: Matrix4.translationValues(-80, -210, 0),
-            child: Text(
+            child: const Text(
               "Divorce Case Details",
               style: TextStyle(
                 color: Colors.black,
@@ -56,10 +56,10 @@ class _Casecard2State extends State<Casecard2> {
               width: 87.96,
               height: 24.91,
               decoration: BoxDecoration(
-                  color: Color(0xFFC99F4A),
+                  color: const Color(0xFFC99F4A),
                   borderRadius: BorderRadius.circular(10)),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 5),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 5),
                 child: Text(
                   "View",
                   textAlign: TextAlign.center,
@@ -78,7 +78,7 @@ class _Casecard2State extends State<Casecard2> {
             transform: Matrix4.translationValues(160, -295, 0),
             height: 80,
             width: 110,
-            child: Icon(
+            child: const Icon(
               Icons.bookmark_add_outlined,
               color: Colors.black,
             ),
@@ -99,8 +99,8 @@ class _Casecard2State extends State<Casecard2> {
                       "assets/images/download.png",
                     ),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 5),
+                  const Padding(
+                    padding: EdgeInsets.only(left: 5),
                     child: Text(
                       "Download Info",
                       textAlign: TextAlign.center,
@@ -123,7 +123,7 @@ class _Casecard2State extends State<Casecard2> {
           ),
           Container(
               transform: Matrix4.translationValues(-65, -380, 0),
-              child: Text(
+              child: const Text(
                 "Sr Lawyer1",
                 style: TextStyle(
                   color: Colors.black,
@@ -135,7 +135,7 @@ class _Casecard2State extends State<Casecard2> {
               )),
           Container(
               transform: Matrix4.translationValues(-60, -375, 0),
-              child: Text(
+              child: const Text(
                 "+91 9876543210",
                 style: TextStyle(
                   color: Colors.black,
@@ -147,7 +147,7 @@ class _Casecard2State extends State<Casecard2> {
               )),
           Container(
               transform: Matrix4.translationValues(-140, -350, 0),
-              child: Text(
+              child: const Text(
                 "Email:",
                 style: TextStyle(
                   color: Colors.black,
@@ -159,7 +159,7 @@ class _Casecard2State extends State<Casecard2> {
               )),
           Container(
               transform: Matrix4.translationValues(-120, -340, 0),
-              child: Text(
+              child: const Text(
                 "Case Number:",
                 style: TextStyle(
                   color: Colors.black,
@@ -171,7 +171,7 @@ class _Casecard2State extends State<Casecard2> {
               )),
           Container(
               transform: Matrix4.translationValues(-125, -330, 0),
-              child: Text(
+              child: const Text(
                 "Case Name:",
                 style: TextStyle(
                   color: Colors.black,
@@ -183,7 +183,7 @@ class _Casecard2State extends State<Casecard2> {
               )),
           Container(
               transform: Matrix4.translationValues(-125, -320, 0),
-              child: Text(
+              child: const Text(
                 "Party Name:",
                 style: TextStyle(
                   color: Colors.black,
@@ -197,7 +197,7 @@ class _Casecard2State extends State<Casecard2> {
             transform: Matrix4.translationValues(110, -440, 0),
             height: 111,
             width: 131.38,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/images/case_image.png"))),
           ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:juridentt/widgets/schedule_card2.dart';
 import 'package:table_calendar/table_calendar.dart';
 
+// ignore: must_be_immutable
 class Calender_page extends StatefulWidget {
   String name;
   String date;
@@ -28,7 +29,7 @@ class _Calender_pageState extends State<Calender_page> {
           children: [
             Container(
               transform: Matrix4.translationValues(-80, 80, 0),
-              child: Text("2023 Apr",
+              child: const Text("2023 Apr",
                   style: TextStyle(
                     color: Colors.black,
                     fontFamily: 'Satoshi',
@@ -46,7 +47,7 @@ class _Calender_pageState extends State<Calender_page> {
             ),
             Container(
               transform: Matrix4.translationValues(0, 100, 0),
-              child: Text(
+              child: const Text(
                 "Task Overview",
                 textAlign: TextAlign.center,
                 style: TextStyle(
@@ -64,11 +65,11 @@ class _Calender_pageState extends State<Calender_page> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     child: Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Container(
                             height: 144,
                             width: 115,
@@ -76,7 +77,7 @@ class _Calender_pageState extends State<Calender_page> {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
                               border: Border.all(
-                                  width: 3, color: Color(0xffC99F4A)),
+                                  width: 3, color: const Color(0xffC99F4A)),
                             ),
                           ),
                         ),
@@ -85,7 +86,7 @@ class _Calender_pageState extends State<Calender_page> {
                           children: [
                             Container(
                               transform: Matrix4.translationValues(30, 40, 0),
-                              child: Text(
+                              child: const Text(
                                 "Total",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -98,7 +99,7 @@ class _Calender_pageState extends State<Calender_page> {
                             ),
                             Container(
                               transform: Matrix4.translationValues(35, 50, 0),
-                              child: Text(
+                              child: const Text(
                                 "20",
                                 style: TextStyle(
                                   color: Color(0xffC99F4A),
@@ -115,11 +116,11 @@ class _Calender_pageState extends State<Calender_page> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     child: Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Container(
                             height: 144,
                             width: 115,
@@ -127,7 +128,7 @@ class _Calender_pageState extends State<Calender_page> {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
                               border: Border.all(
-                                  width: 3, color: Color(0xffC99F4A)),
+                                  width: 3, color: const Color(0xffC99F4A)),
                             ),
                           ),
                         ),
@@ -136,7 +137,7 @@ class _Calender_pageState extends State<Calender_page> {
                           children: [
                             Container(
                               transform: Matrix4.translationValues(35, 40, 0),
-                              child: Text(
+                              child: const Text(
                                 "Left",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -149,7 +150,7 @@ class _Calender_pageState extends State<Calender_page> {
                             ),
                             Container(
                               transform: Matrix4.translationValues(35, 50, 0),
-                              child: Text(
+                              child: const Text(
                                 "20",
                                 style: TextStyle(
                                   color: Color(0xffC99F4A),
@@ -166,11 +167,11 @@ class _Calender_pageState extends State<Calender_page> {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(0),
+                    padding: const EdgeInsets.all(0),
                     child: Stack(
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(10),
+                          padding: const EdgeInsets.all(10),
                           child: Container(
                             height: 144,
                             width: 115,
@@ -178,7 +179,7 @@ class _Calender_pageState extends State<Calender_page> {
                               borderRadius: BorderRadius.circular(10),
                               color: Colors.white,
                               border: Border.all(
-                                  width: 3, color: Color(0xffC99F4A)),
+                                  width: 3, color: const Color(0xffC99F4A)),
                             ),
                           ),
                         ),
@@ -187,7 +188,7 @@ class _Calender_pageState extends State<Calender_page> {
                           children: [
                             Container(
                               transform: Matrix4.translationValues(30, 40, 0),
-                              child: Text(
+                              child: const Text(
                                 "Done",
                                 style: TextStyle(
                                   color: Colors.black,
@@ -200,7 +201,7 @@ class _Calender_pageState extends State<Calender_page> {
                             ),
                             Container(
                               transform: Matrix4.translationValues(35, 50, 0),
-                              child: Text(
+                              child: const Text(
                                 "20",
                                 style: TextStyle(
                                   color: Color(0xffC99F4A),
@@ -223,7 +224,7 @@ class _Calender_pageState extends State<Calender_page> {
               children: [
                 Container(
                   transform: Matrix4.translationValues(10, 100, 0),
-                  child: Text(
+                  child: const Text(
                     "Schedule",
                     style: TextStyle(
                       color: Colors.black,
@@ -236,7 +237,7 @@ class _Calender_pageState extends State<Calender_page> {
                 ),
                 Container(
                   transform: Matrix4.translationValues(180, 100, 0),
-                  child: Text(
+                  child: const Text(
                     "See All",
                     style: TextStyle(
                       fontFamily: 'Satoshi',
@@ -281,14 +282,14 @@ class _Calender_pageState extends State<Calender_page> {
                 ),
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Row(
               children: [
                 Container(
                   transform: Matrix4.translationValues(10, 0, 0),
-                  child: Text(
+                  child: const Text(
                     "Upcoming Schedule",
                     style: TextStyle(
                       color: Colors.black,
@@ -301,7 +302,7 @@ class _Calender_pageState extends State<Calender_page> {
                 ),
                 Container(
                   transform: Matrix4.translationValues(70, 0, 0),
-                  child: Text(
+                  child: const Text(
                     "See All",
                     style: TextStyle(
                       fontFamily: 'Satoshi',

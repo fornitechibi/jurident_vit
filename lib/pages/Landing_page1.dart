@@ -1,12 +1,11 @@
-import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:juridentt/pages/Landing_page3.dart';
 import 'package:juridentt/pages/Landing_page4.dart';
 import 'package:juridentt/pages/Landing_page5.dart';
-import 'package:juridentt/pages/login_page.dart';
-import 'package:juridentt/widgets/case_card.dart';
+// import 'package:juridentt/pages/login_page.dart';
+// import 'package:juridentt/widgets/case_card.dart';
 
 class Landing_page1 extends StatefulWidget {
   const Landing_page1({super.key});
@@ -18,12 +17,12 @@ class Landing_page1 extends StatefulWidget {
 class _Landing_page1State extends State<Landing_page1> {
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
+    //final size = MediaQuery.of(context).size;
     return SafeArea(
       child: Scaffold(
         body: Column(
           children: [
-            Padding(
+            const Padding(
               padding: EdgeInsets.only(left: 0, top: 80),
               child: Text(
                 "Jurident",
@@ -50,16 +49,16 @@ class _Landing_page1State extends State<Landing_page1> {
                               case_num: 1234,
                               party_name: "bjp"),
                           transition: Transition.fade,
-                          duration: Duration(seconds: 1));
+                          duration: const Duration(seconds: 1));
                     },
                     child: Container(
                       height: 120,
                       width: 120,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image:
                                   AssetImage("assets/images/Rectangle .png"))),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("3",
@@ -82,7 +81,7 @@ class _Landing_page1State extends State<Landing_page1> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
                   InkWell(
@@ -93,16 +92,16 @@ class _Landing_page1State extends State<Landing_page1> {
                               case_num: 1234,
                               party_name: "bjp"),
                           transition: Transition.fade,
-                          duration: Duration(seconds: 1));
+                          duration: const Duration(seconds: 1));
                     },
                     child: Container(
                       height: 120,
                       width: 120,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image:
                                   AssetImage("assets/images/Rectangle .png"))),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("3",
@@ -125,7 +124,7 @@ class _Landing_page1State extends State<Landing_page1> {
                       ),
                     ),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     width: 12,
                   ),
                   InkWell(
@@ -136,16 +135,16 @@ class _Landing_page1State extends State<Landing_page1> {
                               case_num: 1234,
                               party_name: "bjp"),
                           transition: Transition.fade,
-                          duration: Duration(seconds: 1));
+                          duration: const Duration(seconds: 1));
                     },
                     child: Container(
                       height: 120,
                       width: 120,
-                      decoration: BoxDecoration(
+                      decoration: const BoxDecoration(
                           image: DecorationImage(
                               image:
                                   AssetImage("assets/images/Rectangle .png"))),
-                      child: Column(
+                      child: const Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text("3",
