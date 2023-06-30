@@ -56,7 +56,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
                 height: 101,
                 width: size.width,
                 decoration: const ShapeDecoration(
-                  color: Colors.white,
+                  color: Colors.black,
                   shape: RoundedRectangleBorder(
                     side: BorderSide(width: 0, color: Color(0xFFFAFAFA)),
                     borderRadius: BorderRadius.only(
@@ -99,7 +99,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
                         ),
                         const SizedBox(width: 80),
                         Transform(
-                          transform: Matrix4.translationValues(10, 30, 0),
+                          transform: Matrix4.translationValues(-10, 30, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(90, 38),
@@ -126,7 +126,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
                           ),
                         ),
                         Transform(
-                          transform: Matrix4.translationValues(15, 30, 0),
+                          transform: Matrix4.translationValues(0, 30, 0),
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
@@ -161,7 +161,7 @@ class _BookmarksPageState extends State<BookmarksPage> {
                 width: 428,
                 height: size.height,
                 decoration: const BoxDecoration(
-                  color: Colors.amber,
+                  color: Colors.black,
                 ),
                 child: Column(
                   children: [

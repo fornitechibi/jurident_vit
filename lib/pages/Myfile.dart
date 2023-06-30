@@ -108,7 +108,7 @@ class _MyfilesState extends State<Myfiles> {
                         ),
                         const SizedBox(width: 80),
                         Transform(
-                          transform: Matrix4.translationValues(10, 30, 0),
+                          transform: Matrix4.translationValues(-10, 30, 0),
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                                 fixedSize: const Size(90, 38),
@@ -135,7 +135,7 @@ class _MyfilesState extends State<Myfiles> {
                           ),
                         ),
                         Transform(
-                          transform: Matrix4.translationValues(15, 30, 0),
+                          transform: Matrix4.translationValues(0, 30, 0),
                           child: ElevatedButton(
                             onPressed: () {},
                             style: ElevatedButton.styleFrom(
