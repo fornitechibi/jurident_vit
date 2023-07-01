@@ -2,8 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 import 'package:juridentt/navbar/navbar.dart';
+import 'package:juridentt/pages/Bookmarks_page.dart';
 import 'package:juridentt/pages/Myfile.dart';
+import 'package:juridentt/pages/navigator.dart';
 import 'package:juridentt/widgets/Case_card2_new.dart';
+import 'package:juridentt/widgets/navbar_widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -25,7 +28,7 @@ class MyApp extends StatelessWidget {
       ),
       debugShowCheckedModeBanner: false,
       title: 'Juridentt',
-      home: const Navbar(
+      home: const MyWidget(
           // case_name: "murder",
           // case_num: 1234,
           // party_name: "bjp",

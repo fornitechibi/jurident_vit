@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:juridentt/pages/Bookmarks_page.dart';
+import 'package:juridentt/pages/newcase_form.dart';
 import 'account.dart';
 import 'calender.dart';
 import 'home.dart';
@@ -23,6 +24,7 @@ class _NavbarState extends State<Navbar> {
     const Calendar(),
     const Account(),
     const BookmarksPage(),
+    const Newcase_form(),
   ];
 
   // PageStorageBucket
@@ -47,7 +49,12 @@ class _NavbarState extends State<Navbar> {
           size: 35,
         ),
         //Try adding the 'const' keyword to the constructor invocation.
-        onPressed: () {},
+        onPressed: () {
+          setState(() {
+            currentScreen = Newcase_form();
+            currentTab = 5;
+          });
+        },
         backgroundColor: Color(0xFFC99F4A),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:juridentt/pages/Landing_page1.dart';
 import 'package:juridentt/pages/Myfile.dart';
+import 'package:juridentt/widgets/navbar_widget.dart';
 
 class MyWidget extends StatefulWidget {
   const MyWidget({super.key});
@@ -54,7 +55,8 @@ class _MyWidgetState extends State<MyWidget> {
                   ),
                 ),
               ),
-            )
+            ),
+            const NavbarWidget()
           ],
         ),
       ),
