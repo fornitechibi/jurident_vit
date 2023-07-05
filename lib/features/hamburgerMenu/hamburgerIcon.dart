@@ -4,6 +4,7 @@ import 'package:juridentt/features/client_search/widgets.dart';
 import 'package:juridentt/features/hamburgerMenu/aboutUs.dart';
 import 'package:juridentt/features/hamburgerMenu/faq.dart';
 import 'package:juridentt/features/hamburgerMenu/feedback.dart';
+import 'package:juridentt/features/hamburgerMenu/notification.dart';
 import 'package:juridentt/features/hamburgerMenu/terms.dart';
 // import 'package:jurident/colors.dart';
 // import 'package:jurident/theme_changer_provider.dart';
@@ -146,6 +147,11 @@ class _HamburgerIconState extends State<HamburgerIcon> {
                 Navigator.pushNamed(context, FeedbackPage.routename);
               },
               child: const CustomListTile(title: "Feedback Page")),
+              InkWell(
+              onTap: (){
+                Navigator.pushNamed(context,newCases.routename);
+              },
+              child: const CustomListTile(title: "New notes")),
             SizedBox(
               height: screenHeight*0.05,
             ),

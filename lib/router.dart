@@ -5,6 +5,7 @@ import 'package:juridentt/features/hamburgerMenu/faq.dart';
 import 'package:juridentt/features/hamburgerMenu/feedback.dart';
 // import 'package:juridentt/features/CaseNotes/caseNotes.dart';
 import 'package:juridentt/features/hamburgerMenu/hamburgerIcon.dart';
+import 'package:juridentt/features/hamburgerMenu/notification.dart';
 import 'package:juridentt/features/hamburgerMenu/terms.dart';
 import 'package:juridentt/home.dart';
 import 'package:juridentt/home.dart';
@@ -46,6 +47,12 @@ Route<dynamic> generateRoute(RouteSettings routeSettings) {
         settings: routeSettings,
         builder: (_) => const FAQ(),
       );
+      case newCases.routename:
+      return MaterialPageRoute(
+        settings: routeSettings,
+        builder: (_) => const newCases(),
+      );
+      
 
     default:
       return MaterialPageRoute(

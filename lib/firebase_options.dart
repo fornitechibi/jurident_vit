@@ -44,40 +44,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBE8m0hGJohBmu1t1wNyhCl32LDOGwc2U4',
-    appId: '1:324328563234:web:f9452d2e6418425652207b',
-    messagingSenderId: '324328563234',
-    projectId: 'jurident-ddb64',
-    authDomain: 'jurident-ddb64.firebaseapp.com',
-    storageBucket: 'jurident-ddb64.appspot.com',
-    measurementId: 'G-Z3FSH50V67',
+    apiKey: 'AIzaSyA7yBtbSTcxA7_A7sMExb69Q9chEz5lQo4',
+    appId: '1:305549263527:web:1e08b00c34ef402bd3d182',
+    messagingSenderId: '305549263527',
+    projectId: 'jurident-9a928',
+    authDomain: 'jurident-9a928.firebaseapp.com',
+    databaseURL: 'https://jurident-9a928-default-rtdb.firebaseio.com',
+    storageBucket: 'jurident-9a928.appspot.com',
+    measurementId: 'G-1FQY6Y4Z6T',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDYjphwLD57kQ85gVbeFpEQOYaiWiu08SA',
-    appId: '1:324328563234:android:60444f2d146cce9d52207b',
-    messagingSenderId: '324328563234',
-    projectId: 'jurident-ddb64',
-    storageBucket: 'jurident-ddb64.appspot.com',
+    apiKey: 'AIzaSyA0Ek6hPABucmP7tLyZo_HQztPrX-YjfJE',
+    appId: '1:305549263527:android:60691bc0ddd13bfad3d182',
+    messagingSenderId: '305549263527',
+    projectId: 'jurident-9a928',
+    databaseURL: 'https://jurident-9a928-default-rtdb.firebaseio.com',
+    storageBucket: 'jurident-9a928.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDiC2NXnd4Kp53rk8va-fgVmrqibhNwTBY',
-    appId: '1:324328563234:ios:833a51d9d7e609ee52207b',
-    messagingSenderId: '324328563234',
-    projectId: 'jurident-ddb64',
-    storageBucket: 'jurident-ddb64.appspot.com',
-    iosClientId: '324328563234-7d10opppkrnbvmh93gct7efp4qqi83vm.apps.googleusercontent.com',
+    apiKey: 'AIzaSyALoiHYrJ9-GRlP4qwbnnyXUek6hBCb9y4',
+    appId: '1:305549263527:ios:43c2a7008e5cd6f7d3d182',
+    messagingSenderId: '305549263527',
+    projectId: 'jurident-9a928',
+    databaseURL: 'https://jurident-9a928-default-rtdb.firebaseio.com',
+    storageBucket: 'jurident-9a928.appspot.com',
+    androidClientId: '305549263527-6r8alvbocdr0qn9kkf6idjiucpa9dv2i.apps.googleusercontent.com',
+    iosClientId: '305549263527-biil09rlb8bq69qrn4dk74rvevdv1pmk.apps.googleusercontent.com',
     iosBundleId: 'com.example.juridentt',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyDiC2NXnd4Kp53rk8va-fgVmrqibhNwTBY',
-    appId: '1:324328563234:ios:80b1f0ba9cb946b852207b',
-    messagingSenderId: '324328563234',
-    projectId: 'jurident-ddb64',
-    storageBucket: 'jurident-ddb64.appspot.com',
-    iosClientId: '324328563234-4ubg1tcgilqjcv4ra03ohi39cq4q6bb7.apps.googleusercontent.com',
+    apiKey: 'AIzaSyALoiHYrJ9-GRlP4qwbnnyXUek6hBCb9y4',
+    appId: '1:305549263527:ios:c438976b7c2304abd3d182',
+    messagingSenderId: '305549263527',
+    projectId: 'jurident-9a928',
+    databaseURL: 'https://jurident-9a928-default-rtdb.firebaseio.com',
+    storageBucket: 'jurident-9a928.appspot.com',
+    androidClientId: '305549263527-6r8alvbocdr0qn9kkf6idjiucpa9dv2i.apps.googleusercontent.com',
+    iosClientId: '305549263527-hsnovvtb6od0bvf08loi86d7ifanq58k.apps.googleusercontent.com',
     iosBundleId: 'com.example.juridentt.RunnerTests',
   );
 }
