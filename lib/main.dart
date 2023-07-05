@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:jurident/models/LP.dart';
+// import 'package:jurident/models/LP.dart';
 import 'package:jurident/screens/aboutusScreen.dart';
 import 'package:jurident/screens/contact_us_screen.dart';
+import 'package:jurident/screens/dashboard.dart';
 // import 'package:jurident/screens/mainscreen.dart';
 import 'package:jurident/screens/terms_and_conditions_screen.dart';
 
@@ -33,7 +34,7 @@ class App extends StatelessWidget {
         // darkTheme: ThemeData(
         //   brightness: Brightness.dark,
         // ),
-        home: Landing_page1(),
+        home: DashboardPage(),
         routes: {
           TermsAndConditions.routeName: (context) => TermsAndConditions(),
           AboutUsScreen.routeName: (context) => AboutUsScreen(),
