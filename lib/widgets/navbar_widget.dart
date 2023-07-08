@@ -7,32 +7,27 @@ import '../navbar/news.dart';
 import '../pages/Bookmarks_page.dart';
 import '../pages/newcase_form.dart';
 
-class NavbarWidget extends StatefulWidget {
-  const NavbarWidget({super.key});
+class NavbarWidget extends StatelessWidget {
+  NavbarWidget({super.key});
 
-  @override
-  State<NavbarWidget> createState() => _NavbarWidgetState();
-}
-
-class _NavbarWidgetState extends State<NavbarWidget> {
   int currentTab = 0;
 
-  //the below code declares a constant (final) variable named screen that holds a
-  // list (List) of objects of type Widget.
-  final List<Widget> screens = [
-    const Home(),
-    const News(),
-    const Calendar(),
-    const Account(),
-    const BookmarksPage(),
-    const Newcase_form(),
-  ];
+  // //the below code declares a constant (final) variable named screen that holds a
+  // // list (List) of objects of type Widget.
+  // final List<Widget> screens = [
+  //   const Home(),
+  //   const News(),
+  //   const Calendar(),
+  //   const Account(),
+  //   const BookmarksPage(),
+  //   const Newcase_form(),
+  // ];
 
   // PageStorageBucket
   // It represents a storage bucket used to store and restore the state of widgets.
   //below lines of code is often used when you need to store and restore the state
   // of widgets in Flutter applications, typically in scenarios where you have multiple
-  // screens or pages and want to persist their state when navigating between them.
+  // screens or pages and want to persist their state when navigating between them
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = const Home();
   @override
@@ -75,12 +70,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                         Row(
                           children: [
                             MaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  currentScreen = BookmarksPage();
-                                  currentTab = 4;
-                                });
-                              },
+                              onPressed: () {},
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -102,12 +92,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                               ),
                             ),
                             MaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  currentScreen = const News();
-                                  currentTab = 1;
-                                });
-                              },
+                              onPressed: () {},
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -135,12 +120,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             MaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  currentScreen = const Calendar();
-                                  currentTab = 2;
-                                });
-                              },
+                              onPressed: () {},
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
@@ -162,12 +142,7 @@ class _NavbarWidgetState extends State<NavbarWidget> {
                               ),
                             ),
                             MaterialButton(
-                              onPressed: () {
-                                setState(() {
-                                  currentScreen = const Account();
-                                  currentTab = 3;
-                                });
-                              },
+                              onPressed: () {},
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
