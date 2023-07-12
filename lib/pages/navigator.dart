@@ -56,7 +56,7 @@ class _MyWidgetState extends State<MyWidget> {
                 ),
               ),
             ),
-            const NavbarWidget()
+            NavbarWidget()
           ],
         ),
       ),
